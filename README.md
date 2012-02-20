@@ -52,6 +52,7 @@ Git-flow extensions assist feature branch management, and help you quarantine an
         git branch --track develop upstream/qa
  1. Initialize git-flow.  I only make one change to the defaults: using `qa` for
     'production releases'
+
         git flow init
         Branch name for production releases: [master] qa
         Branch name for "next release" development: [develop]
