@@ -34,19 +34,19 @@ and illustrated [here](https://github.com/eadz/Git-Flow-Example), with more deta
 [here](http://yakiloo.com/getting-started-git-flow/).
 Git-flow extensions assist feature branch management, and help you quarantine any mess(es):
 
- 1. Fork a cookbook, say <ckbk>, to your account (Use your Github account - free or paid)
- 1. Clone your fork of <ckbk> to your desktop (shell)
+ 1. Fork a cookbook, say `<ckbk>`, to your account (Use your Github account - free or paid)
+ 1. Clone your fork of `<ckbk>` to your desktop (shell)
 
         pushd
         ~/src/
         git clone git@github.com:hedgehog/users.git
         pushd users
         git fetch origin
- 1. Add cookbooks/<ckbk> as the upstream.
+ 1. Add `cookbooks/<ckbk>` as the upstream.
 
         git remote add upstream git://github.com/cookbooks/users.git
         git fetch upstream
- 1. Track the master branch upstream in the local master branch
+ 1. Track the `master` branch upstream in the local `master` branch
 
         git branch --set-upstream master upstream/master
         git branch --track qa upstream/qa
@@ -66,13 +66,13 @@ Git-flow extensions assist feature branch management, and help you quarantine an
  1. checkout the `qa` branch
 
         git checkout qa
- 1. Start a branch to bring in any changes from master (the cookbook upstream)
+ 1. Start a branch to bring in any changes from `master` (the cookbook `upstream`)
 
         git flow feature start rebase
- 1. [Rebase](http://book.git-scm.com/4_rebasing.html) `qa` onto master
+ 1. [Rebase](http://book.git-scm.com/4_rebasing.html) `qa` onto `master`
 
         git rebase master
- 1. resolve and conflicts and merge.  There shouldn't be any merge conflicts if
+ 1. resolve any conflicts and merge.  There shouldn't be any merge conflicts if
     people have been rebasing `qa` onto `master` before making their changes.
     But if there are, use this command to start your GUI mergetool:
 
@@ -86,7 +86,8 @@ Git-flow extensions assist feature branch management, and help you quarantine an
  1. start a feature branch make to your changes to `develop`
 
         git flow feature start demo
- 1. implement whatever changes you intended, rebase onto master and then onto qa if changes happen upstream while you are developing your ideas
+ 1. implement whatever changes you intended, rebase this `feature\demo` branch
+ onto `master` and then onto `qa` if changes happen upstream while you are developing your ideas
  1. publish your feature branch to your github account.
 
         git flow feature publish demo
