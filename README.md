@@ -23,8 +23,8 @@ This account is a collection of cookbooks that:
  - [knife-github-cookbooks](https://github.com/websterclay/knife-github-cookbooks): Likely more suited to those cookbooks you *are* hacking on.
 
 ### How to contribute:
-This is an ideal workflow, and assumes no familiarity with Git, or git workflows.  Of course
-one-day someone (hint) will wrap this all in a single command.
+This is an ideal workflow, and assumes no familiarity with Git, or Git workflows.  Of course
+one-day someone (hint) will wrap some of this in a single command.
 If you don't already have it setup, integrating a GUI merge-tool with Git will help:
 
     git config --global merge.tool meld
