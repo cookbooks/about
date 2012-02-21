@@ -74,9 +74,9 @@ Git-flow extensions assist feature branch management, and help you quarantine an
  1. [Rebase](http://book.git-scm.com/4_rebasing.html) `qa` onto `master`
 
         git rebase master
- 1. resolve any conflicts and merge.  There shouldn't be any merge conflicts if
-    people have been rebasing `qa` onto `master` before making their changes.
-    But if there are, use this command to start your GUI mergetool:
+ 1. resolve any conflicts and merge. If people have been rebasing `qa` onto
+ `master` before making their changes, then there should be few or no merge conflicts.
+  But if there are, use these commands to start your GUI mergetool, then continue:
 
         git mergetool
         # Once any merge conflicts have been resolved
