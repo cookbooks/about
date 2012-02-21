@@ -5,6 +5,7 @@ contexts that can accommodate such change.
 
 ### Scope
 We track:
+
  - Atomic-style cookbook repositories (e.g a heavywater cookbook
 [chef-ganglia](https://github.com/heavywater/chef-ganglia) as [chef-ganglia](https://github.com/cookbooks/chef-ganglia))
  - Collection-style cookbook repositories of (e.g Opcode [cookbooks/haproxy](https://github.com/opscode/cookbooks/tree/master/haproxy))
@@ -12,16 +13,17 @@ as [haproxy](https://github.com/cookbooks/haproxy)).
 
 ### Objectives
 This account is a collection of cookbooks that:
- - Tracks various upstream Chef cookbooks from vendors and individuals.
+
+ - Track various upstream Chef cookbooks from vendors and individuals.
  - Live on when upstream drops them.
- - Strives, in the `qa` branch, to be compatible irrespective of who upstream is.
+ - Strive, in the `qa` branch, to be compatible irrespective of who upstream is.
 
 ### Complementary Tools
  - [Librarian](https://github.com/applicationsonline/librarian): "Librarian is really for pulling in the 50 or so finished third-party cookbooks that you're using, not the 1 or 2 cookbooks you're actively working on".
  - [knife-github-cookbooks](https://github.com/websterclay/knife-github-cookbooks): Likely more suited to those cookbooks you *are* hacking on.
 
 ### How to contribute:
-This is an ideal workflow, and assumes no familiarity with git.  Of course
+This is an ideal workflow, and assumes no familiarity with Git, or git workflows.  Of course
 one-day someone (hint) will wrap this all in a single command.
 If you don't already have it setup, integrating a GUI merge-tool with Git will help:
 
