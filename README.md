@@ -36,7 +36,7 @@ and illustrated [here](https://github.com/eadz/Git-Flow-Example), with more deta
 [here](http://yakiloo.com/getting-started-git-flow/).
 Git-flow extensions assist feature branch management, and help you quarantine any mess(es):
 
- 1. Fork a cookbook, say `<ckbk>`, to your account (Use your Github account - free or paid)
+ 1. Fork a [cookbooks](https://github.com/cookbooks) repository, `<ckbk>`, to your account (Use your Github account - free or paid)
  1. Clone your fork of `<ckbk>` to your desktop (shell)
 
         pushd
