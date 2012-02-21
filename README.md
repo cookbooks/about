@@ -23,7 +23,7 @@ This account is a collection of cookbooks that:
  - [knife-github-cookbooks](https://github.com/websterclay/knife-github-cookbooks): Likely more suited to those cookbooks you *are* hacking on.
 
 ### How to contribute:
-For extremely simple changes, e.g. typographical errors, and similar to that, your best bet is to use Githubs 'edit' facility.
+For extremely simple changes, e.g. typographical errors, and similar to that, your best bet is to use Githubs 'Edit this file' button.
 
 For more complex, time consuming changes, the following is one workflow that might help you stay sane in the long run:
 
