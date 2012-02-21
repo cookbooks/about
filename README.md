@@ -89,6 +89,9 @@ Git-flow extensions assist feature branch management, and help you quarantine an
  1. finish the rebase feature, depending on the sate of your develop branch you may need to use the mergetool again - hopefully not.
 
         git flow feature finish rebase
+        git checkout qa
+        git merge develop
+        git push origin
  1. start a feature branch make to your changes to `develop`
 
         git flow feature start demo
@@ -99,6 +102,10 @@ Git-flow extensions assist feature branch management, and help you quarantine an
         git flow feature publish demo
  1. **make your Github pull request for the `feature/<yours>` branch to the `qa` branch of `cookbooks/<ckbk>`**
  1. wait for the bouquets and applause.
+ 1. Once the crowd settle and your request is pulled into upstream, you'll want to tidy-up locally:
+
+        git flow feature finish demo
+        git fetch upstream
 
 If you look at `hedgehog/users` and `cookbooks/users`, you will see the results
 of the above, where I pulled in some changes from master that had been missed in some
