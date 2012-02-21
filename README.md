@@ -69,9 +69,9 @@ Git-flow extensions assist feature branch management, and help you quarantine an
         Hotfix branches? [hotfix/]
         Support branches? [support/]
         Version tag prefix? []
- 1. checkout the `qa` branch
+ 1. checkout the `develop` branch
 
-        git checkout qa
+        git checkout develop
  1. Start a branch to bring in any changes from `master` (the cookbook `upstream`)
 
         git flow feature start rebase
