@@ -3,33 +3,53 @@
 These cookbook repositories are likely to change.  You should only use them in
 contexts that can accommodate such change.
 
-### Scope
-We track:
+### Subject
+We track, without preference:
 
- - Atomic-style cookbook repositories (e.g a heavywater cookbook
+ - American-style cookbook repositories, i.e. where the individual (cookbook) is of primary concern (of the repository).
+ Example: a heavywater cookbook
 [chef-ganglia](https://github.com/heavywater/chef-ganglia) as [chef-ganglia](https://github.com/cookbooks/chef-ganglia))
- - Collection-style cookbook repositories of (e.g Opcode [cookbooks/haproxy](https://github.com/opscode/cookbooks/tree/master/haproxy))
-as [haproxy](https://github.com/cookbooks/haproxy)).
+ - European-style cookbook repositories, i.e. where the individual (cookbook) is of secondary concern (of the repository).
+  Example: RightScale [cookbooks_public/cookbooks/web_apache](https://github.com/rightscale/cookbooks_public/tree/master/cookbooks/web_apache))
+as [rs-web_apache](https://github.com/cookbooks/rs-web_apache)).
+
+### Scope:
+These are the vendors, or upstream:
+
+ - `ey-*`: [EngineYard](http://www.engineyard.com) [ey-cloud-recipes](https://github.com/engineyard/ey-cloud-recipes) European-repository.
+ - `hw-*`: [HeavyWater](http://heavywater.ca/) [chef-*](https://github.com/search?q=%27chef-%27+username%3Aheavywater&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
+ - `ic-*`: [InfoChimps-Labs](http://www.infochimps.com/) [ironfan-pantry](https://github.com/infochimps-labs/ironfan-pantry) European-repository.
+ - `oc-*`: [OpsCode](http://www.opscode.com/) [cookbooks](https://github.com/opscode/cookbooks) European-repository.
+ - `rs-*`: [RightScale](http://www.rightscale.com/) [cookbooks](https://github.com/rightscale/cookbooks) and [cookbooks_public](https://github.com/rightscale/cookbooks_public) European-repositories.
+ - `ss-*`: [SliverSky](http://silversky.ca/) (aka [fnichol](https://github.com/fnichol)) [chef-*](https://github.com/search?q=%27chef-%27+username%3Afnichol&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
+
+### Reference cookbooks
+Repositories without the prefix `cc-` are cookbooks that have been selected by
+someone as the 'reference' cookbook from among the above 'upstream' or 'vendor'
+cookbooks.  Generally these have been the Opscode cookbooks, but that is not
+carved in stone. Ideally community wide contributions will ocur in the `qa`
+branch of the reference cookbooks.  Email the Chef maillist if you wish to
+add or change what is the reference cookbook.
 
 ### Objectives
 This account is a collection of cookbooks that:
 
  - Track various upstream Chef cookbooks from vendors and individuals.
  - Live on when upstream drops them.
- - Strive, in the `qa` branch, to be compatible irrespective of who upstream is.
+ - Strive, in the `qa` branch of the reference cookbooks, to be compatible irrespective of who upstream is.
 
 ### Complementary Tools
  - [Librarian](https://github.com/applicationsonline/librarian): "Librarian is really for pulling in the 50 or so finished third-party cookbooks that you're using, not the 1 or 2 cookbooks you're actively working on".
  - [knife-github-cookbooks](https://github.com/websterclay/knife-github-cookbooks): Likely more suited to those cookbooks you *are* hacking on.
 
 ### How to contribute:
-For extremely simple changes, e.g. typographical errors, and similar to that, your best bet is to use the Github 'Edit this file' button.
+For extremely simple changes, e.g. typographical errors: Use the Github 'Edit this file' button.
 
-For more complex, time consuming changes, the following is one workflow that might help you stay sane in the long run:
+For more complex, time consuming changes, the following is one (safety-first/paranoid) workflow that might help you stay sane in the long run:
 
-This is an ideal workflow, and assumes no familiarity with Git, or Git workflows.  Of course
-one-day someone (hint) will wrap some of this in a single command.
-If you don't already have it setup, integrating a GUI merge-tool with Git will help:
+This is an elaborate, and paranoid, workflow.
+The description below assumes no familiarity with Git.
+If you don't already have it configured, integrating a GUI merge-tool with Git will help:
 
     git config --global merge.tool meld
 
