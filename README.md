@@ -8,10 +8,10 @@ We track, without preference:
 
  - American-style cookbook repositories, i.e. where the individual (cookbook) is of primary concern (of the repository).
  Example: a heavywater cookbook
-[chef-ganglia](https://github.com/heavywater/chef-ganglia) as [chef-ganglia](https://github.com/cookbooks/chef-ganglia))
+[chef-ganglia](https://github.com/heavywater/chef-ganglia) is tracked as [hw-chef-ganglia](https://github.com/cookbooks/hw-chef-ganglia))
  - European-style cookbook repositories, i.e. where the individual (cookbook) is of secondary concern (of the repository).
   Example: RightScale [cookbooks_public/cookbooks/web_apache](https://github.com/rightscale/cookbooks_public/tree/master/cookbooks/web_apache))
-as [rs-web_apache](https://github.com/cookbooks/rs-web_apache)).
+is tracked as [rs-web_apache](https://github.com/cookbooks/rs-web_apache)).
 
 ### Scope:
 These are the vendors, or upstream:
