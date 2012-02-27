@@ -18,18 +18,18 @@ These are the vendors, or upstream:
 
  - `ey-*`: [EngineYard](http://www.engineyard.com) [ey-cloud-recipes](https://github.com/engineyard/ey-cloud-recipes) European-repository.
  - `hw-*`: [HeavyWater](http://heavywater.ca/) [chef-*](https://github.com/search?q=%27chef-%27+username%3Aheavywater&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
- - `ic-*`: [InfoChimps-Labs](http://www.infochimps.com/) [ironfan-pantry](https://github.com/infochimps-labs/ironfan-pantry) European-repository.
+ - `ic-*`: (paused - possible repository corruption) [InfoChimps-Labs](http://www.infochimps.com/) [ironfan-pantry](https://github.com/infochimps-labs/ironfan-pantry) European-repository.
  - `oc-*`: [OpsCode](http://www.opscode.com/) [cookbooks](https://github.com/opscode/cookbooks) European-repository.
  - `rs-*`: [RightScale](http://www.rightscale.com/) [cookbooks](https://github.com/rightscale/cookbooks) and [cookbooks_public](https://github.com/rightscale/cookbooks_public) European-repositories.
  - `ss-*`: [SliverSky](http://silversky.ca/) (aka [fnichol](https://github.com/fnichol)) [chef-*](https://github.com/search?q=%27chef-%27+username%3Afnichol&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
 
 ### Reference cookbooks
-Repositories without the prefix `cc-` are cookbooks that have been selected by
+Repositories without the prefix `<char><char>-` are cookbooks that have been selected by
 someone as the 'reference' cookbook from among the above 'upstream' or 'vendor'
 cookbooks.  Generally these have been the Opscode cookbooks, but that is not
 carved in stone. Ideally community wide contributions will ocur in the `qa`
-branch of the reference cookbooks.  Email the Chef maillist if you wish to
-add or change what is the reference cookbook.
+branch of the reference cookbooks.  Open an issue against the cookbooks/about
+repository if you wish to add or change a reference cookbook.
 
 ### Objectives
 This account is a collection of cookbooks that:
