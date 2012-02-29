@@ -77,6 +77,9 @@ Git-flow extensions assist feature branch management, and help you quarantine an
         git branch --set-upstream master upstream/master
         git branch --track qa upstream/qa
         git branch --track develop upstream/qa  # This is not a typo
+ 1. Pull upstream `master` branch into your local `master` branch
+        git checkout master
+        git pull upstream
  1. Initialize git-flow.  I only make one change to the defaults: using `qa` for
     'production releases'
 
