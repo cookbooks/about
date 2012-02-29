@@ -110,7 +110,7 @@ Git-flow extensions assist feature branch management, and help you quarantine an
 
         git flow feature finish rebase
         git checkout qa
-        git merge develop
+        git rebase develop
         git push origin
  1. start a feature branch make to your changes to `develop`
 
