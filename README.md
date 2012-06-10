@@ -98,7 +98,7 @@ Git-flow extensions assist feature branch management, and help you quarantine an
  1. Start a branch to bring in any changes from `master` (the cookbook `upstream`)
 
         git flow feature start rebase
- 1. [Rebase](http://book.git-scm.com/4_rebasing.html) `develop` onto your local `master`
+ 1. [Rebase](http://book.git-scm.com/4_rebasing.html) `master` and `qa` onto the just created `feature/rebase`
 
         git rebase --onto feature/rebase master qa
  1. resolve any conflicts and merge. If people have been rebasing `qa` onto
