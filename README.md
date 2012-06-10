@@ -42,7 +42,34 @@ This account is a collection of cookbooks that:
  - [Librarian](https://github.com/applicationsonline/librarian): "Librarian is really for pulling in the 50 or so finished third-party cookbooks that you're using, not the 1 or 2 cookbooks you're actively working on".
  - [knife-github-cookbooks](https://github.com/websterclay/knife-github-cookbooks): Likely more suited to those cookbooks you *are* hacking on.
 
-### How to contribute:
+### How to contribute - repeat summary:
+This is a terse summary of the steps required to contribute once you have done so once - i.e. it does not include repo setup steps (fork, clone, gitflow init).
+It is a memory prompt.  To contribute the first time see the next section.
+
+        CKBK=users
+        pushd ~/src/${CKBK}
+        git fetch origin
+        git fetch upstream
+        git checkout develop
+        git flow feature start rebase
+        git rebase --onto feature/rebase master qa
+        # resolve any conflicts and merge.
+        #git mergetool
+        # Once any merge conflicts have been resolved
+        #git rebase --continue
+        # invoke git mergetool if there is another conflict, repeat etc.
+        git flow feature finish rebase
+        git checkout qa
+        git rebase develop
+        git push origin
+        git flow feature start demo
+        # Pull other's (or your) changes:  http://hedgehogshiatus.com/106151091
+        git flow feature publish demo
+        git flow feature finish demo
+        # Once your pull request is merged
+        git fetch upstream
+
+### How to contribute - the first time:
 For extremely simple changes, e.g. typographical errors: Use the Github 'Edit this file' button.
 
 For more complex, time consuming changes, the following is one (safety-first/paranoid) workflow that might help you stay sane in the long run:
