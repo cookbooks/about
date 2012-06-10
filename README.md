@@ -63,14 +63,14 @@ Git-flow extensions assist feature branch management, and help you quarantine an
  1. Fork a [cookbooks](https://github.com/cookbooks) repository, `<ckbk>`, to your account (Use your Github account - free or paid)
  1. Clone your fork of `<ckbk>` to your desktop (shell)
 
-        pushd
-        ~/src/
-        git clone git@github.com:hedgehog/users.git
-        pushd users
+        CKBK=users
+        pushd ~/src/
+        git clone git@github.com:hedgehog/${CKBK}.git
+        pushd ${CKBK}
         git fetch origin
  1. Add `cookbooks/<ckbk>` as the upstream.
 
-        git remote add upstream git://github.com/cookbooks/users.git
+        git remote add upstream git://github.com/cookbooks/${CKBK}.git
         git fetch upstream
  1. Track the `master` branch upstream in the local `master` branch
 
@@ -100,7 +100,7 @@ Git-flow extensions assist feature branch management, and help you quarantine an
         git flow feature start rebase
  1. [Rebase](http://book.git-scm.com/4_rebasing.html) `develop` onto your local `master`
 
-        git rebase master
+        git rebase --onto feature/rebase master qa
  1. resolve any conflicts and merge. If people have been rebasing `qa` onto
  `master` before making their changes, then there should be few or no merge conflicts.
   But if there are, use these commands to start your GUI mergetool, then continue:
@@ -118,8 +118,9 @@ Git-flow extensions assist feature branch management, and help you quarantine an
  1. start a feature branch make to your changes to `develop`
 
         git flow feature start demo
- 1. implement whatever changes you intended, rebase this `feature\demo` branch
- onto `master` and then onto `qa` if changes happen upstream while you are developing your ideas
+ 1. implement whatever changes you intended.  If you want to test someone else's
+ pull request, follow [this bog post](http://hedgehogshiatus.com/106151091). If changes happen upstream while
+ you are developing your ideas or testing a pull request: rebase the `feature\demo` branch onto `master` and then onto `qa`
  1. publish your feature branch to your github account.
 
         git flow feature publish demo
