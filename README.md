@@ -1,7 +1,30 @@
+## NB
+The repositories under this organization are not affiliated with Opscode.  We
+track Opscode cookbook repositories in the same way we track any other cookbook
+vendor/maintainer.  Contributing to these repositories should be a straight
+forward as, updating the `qa` branch to the `master` branch, making your changes
+against the updated `qa` branch, and ensuring your pull requests merges cleanly
+against the `qa` branch.
+
+More details follow...
+
 ## Beta
 ### Do not use in production.
 These cookbook repositories are likely to change.  You should only use them in
 contexts that can accommodate such change.
+
+### Contributing
+There are opportunities for people to join cookbook teams, and demonstrate
+their expertise with Chef and the application cookbook.
+Alternatively, submit issue reports and pull requests to the upstream/vendor repo,
+the tracked repo or the reference cookbook repo.
+
+Team membership entails:
+
+ - managing which vendor/upstream repo is the reference cookbook, e.g there are currently 4 `user(s)` cookbooks.
+ - reviewing issue reports and pull requests
+ - monitoring best-practices and soliciting contributions
+ - **generally demonstrating that you are one of the go-to-people for Chef + the application**
 
 ### Subject
 We track, without preference:
@@ -48,6 +71,9 @@ carved in stone. Ideally community wide contributions will ocur in the `qa`
 branch of the reference cookbooks.  Open an issue against the cookbooks/about
 repository if you wish to add or change a reference cookbook.
 
+Until a reference cookbook repository has been created all upstream
+cookbooks are treated equally interms of updates to `master`
+
 ### Objectives
 This account is a collection of cookbooks that:
 
@@ -69,7 +95,7 @@ It is a memory prompt.  To contribute the first time see the next section.
         git fetch upstream
         git checkout develop
         git flow feature start rebase
-        git rebase --onto feature/rebase master qa
+        git rebase master
         # resolve any conflicts and merge.
         #git mergetool
         # Once any merge conflicts have been resolved
