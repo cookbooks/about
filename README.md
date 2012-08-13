@@ -18,7 +18,8 @@ These are the vendors, or upstream:
 
  - `ey-*`: [EngineYard](http://www.engineyard.com) [ey-cloud-recipes](https://github.com/engineyard/ey-cloud-recipes) European-repository.
  - `hw-*`: [HeavyWater](http://heavywater.ca/) [chef-*](https://github.com/search?q=%27chef-%27+username%3Aheavywater&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
- - `ic-*`: (paused - possible repository corruption) [InfoChimps-Labs](http://www.infochimps.com/) [ironfan-pantry](https://github.com/infochimps-labs/ironfan-pantry) European-repository.
+ - `ic-*`: [InfoChimps-Labs](http://www.infochimps.com/) [ironfan-pantry](https://github.com/infochimps-labs/ironfan-pantry) European-repository.
+ - `mm-*`: [MikeTheMan](http://www.miketheman.net) (aka [fnichol](https://github.com/fnichol)) [chef-*](https://github.com/search?q=%27chef-%27+username%3Afnichol&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
  - `oc-*`: [OpsCode](http://www.opscode.com/) [cookbooks](https://github.com/opscode/cookbooks) European-repository.
  - `rs-*`: [RightScale](http://www.rightscale.com/) [cookbooks](https://github.com/rightscale/cookbooks) and [cookbooks_public](https://github.com/rightscale/cookbooks_public) European-repositories.
  - `ss-*`: [SliverSky](http://silversky.ca/) (aka [fnichol](https://github.com/fnichol)) [chef-*](https://github.com/search?q=%27chef-%27+username%3Afnichol&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
@@ -105,6 +106,7 @@ Git-flow extensions assist feature branch management, and help you quarantine an
         git branch --track qa upstream/qa
         git branch --track develop upstream/qa  # This is not a typo
  1. Pull upstream `master` branch into your local `master` branch
+
         git checkout master
         git pull upstream
  1. Initialize git-flow.  I only make one change to the defaults: using `qa` for
@@ -127,7 +129,7 @@ Git-flow extensions assist feature branch management, and help you quarantine an
         git flow feature start rebase
  1. [Rebase](http://book.git-scm.com/4_rebasing.html) `master` and `qa` onto the just created `feature/rebase`
 
-        git rebase --onto feature/rebase master qa
+        git rebase master
  1. resolve any conflicts and merge. If people have been rebasing `master` and `qa` onto
  `feature/<whatever>` before making their changes, then there should be few or no merge conflicts.
   But if there are, use these commands to start your GUI mergetool, then continue:
