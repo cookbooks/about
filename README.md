@@ -14,17 +14,31 @@ We track, without preference:
 is tracked as [rs-web_apache](https://github.com/cookbooks/rs-web_apache)).
 
 ### Scope:
-These are the corporate owners, or upstream:
+These are corporate/organization owners, or upstream:
 
+ - `as-*`: [Atalanta](http://agilesysadmin.net)[chef-*](https://github.com/search?q=%27chef-%27+username%3AAtalanta&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
+ - `co-*`: [coroutine](http://www.coroutine.com)[chef-*](https://github.com/search?q=%27chef-%27+username%3Acoroutine&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
+ - `db-*`: [digitalbutter](http://www.butter.com.hk)[cookbook-*](https://github.com/search?q=%27cookbook-%27+username%3Adigitalbutter&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
+ - `el-*`: [edgelight](http://www.edelight-group.com/) [chef-*](https://github.com/search?q=%27chef-%27+username%3Aedgelight&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
  - `ey-*`: [EngineYard](http://www.engineyard.com) [ey-cloud-recipes](https://github.com/engineyard/ey-cloud-recipes) European-repository.
- - `hw-*`: [HeavyWater](http://heavywater.ca/) [chef-*](https://github.com/search?q=%27chef-%27+username%3Aheavywater&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
+ - `hw-*`: [HeavyWater](http://hw-ops.com) [chef-*](https://github.com/search?q=%27chef-%27+username%3Aheavywater&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
  - `ic-*`: [InfoChimps-Labs](http://www.infochimps.com/) [ironfan-pantry](https://github.com/infochimps-labs/ironfan-pantry) European-repository.
+ - `mc-*`: modcloth-cookbooks [*](https://github.com/search?q=%27 %27+username%3Amodcloth-cookbooks&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
+ - `nd-*`: [needle-cookbooks](http://www.needle.com/) [chef-*](https://github.com/search?q=%27chef-%27+username%3Aneedle-cookbooks&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
  - `oc-*`: [OpsCode](http://www.opscode.com/) [cookbooks](https://github.com/opscode/cookbooks) European-repository.
  - `rs-*`: [RightScale](http://www.rightscale.com/) [cookbooks](https://github.com/rightscale/cookbooks) and [cookbooks_public](https://github.com/rightscale/cookbooks_public) European-repositories.
  - `ss-*`: [SliverSky](http://silversky.ca/) (aka [fnichol](https://github.com/fnichol)) [chef-*](https://github.com/search?q=%27chef-%27+username%3Afnichol&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
+ - `su-*`: [Sensu](http://www.sonian.com/cloud-monitoring-sensu/)[*-chef](https://github.com/search?q=%27-chef%27+username%3Asensu&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
 
 These are the individual owners, or upstream:
+ - `ap-*`: [atomic-penguin](http://atomic-penguin.github.com) (aka Eric G. Wolfe) [cookbook-*](https://github.com/search?q=%27cookbook-%27+username%3Aatomic-penguin&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
+ - `ao-*`: apsoto (aka Alex Soto) [chef-*](https://github.com/search?q=%27chef-%27+username%3Aapsoto&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
+ - `cr-*`: [coderanger](https://coderanger.net/) (aka Noah Kantrowitz) [chef-*](https://github.com/search?q=%27chef-%27+username%3Acoderanger&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
+ - `jv-*`: [lusis](http://about.me/lusis) (aka John E. Vincent) [chef-*](https://github.com/search?q=%27chef-%27+username%3Alusis&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
+ - `km-*`: [karmi](http://www.karmi.cz) (aka Karel Minarik) [cookbook-*](https://github.com/search?q=%27cookbook-%27+username%3Akarmi&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
+ - `ko-*`: [kohder](http://www.kohder.com) (aka Rob Lewis) [chef-*](https://github.com/search?q=%27chef-%27+username%3Akarmi&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
  - `mm-*`: [MikeTheMan](http://www.miketheman.net) (aka Mike Fiedler) [ruby_enterprise](https://github.com/search?q=%27ruby_enterprise%27+username%3Amiketheman&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
+ - `yv-*`: [yevgenko](http://yevgenko.me) (aka Yevgeniy Viktorov) [cookbook-*](https://github.com/search?q=%27cookbook-%27+username%3Ayevgenko&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
 
 ### Reference cookbooks
 Repositories without the prefix `<char><char>-` are cookbooks that have been selected by
