@@ -14,15 +14,17 @@ We track, without preference:
 is tracked as [rs-web_apache](https://github.com/cookbooks/rs-web_apache)).
 
 ### Scope:
-These are the vendors, or upstream:
+These are the corporate owners, or upstream:
 
  - `ey-*`: [EngineYard](http://www.engineyard.com) [ey-cloud-recipes](https://github.com/engineyard/ey-cloud-recipes) European-repository.
  - `hw-*`: [HeavyWater](http://heavywater.ca/) [chef-*](https://github.com/search?q=%27chef-%27+username%3Aheavywater&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
  - `ic-*`: [InfoChimps-Labs](http://www.infochimps.com/) [ironfan-pantry](https://github.com/infochimps-labs/ironfan-pantry) European-repository.
- - `mm-*`: [MikeTheMan](http://www.miketheman.net) (aka [fnichol](https://github.com/fnichol)) [chef-*](https://github.com/search?q=%27chef-%27+username%3Afnichol&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
  - `oc-*`: [OpsCode](http://www.opscode.com/) [cookbooks](https://github.com/opscode/cookbooks) European-repository.
  - `rs-*`: [RightScale](http://www.rightscale.com/) [cookbooks](https://github.com/rightscale/cookbooks) and [cookbooks_public](https://github.com/rightscale/cookbooks_public) European-repositories.
  - `ss-*`: [SliverSky](http://silversky.ca/) (aka [fnichol](https://github.com/fnichol)) [chef-*](https://github.com/search?q=%27chef-%27+username%3Afnichol&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
+
+These are the individual owners, or upstream:
+ - `mm-*`: [MikeTheMan](http://www.miketheman.net) (aka Mike Fiedler) [ruby_enterprise](https://github.com/search?q=%27ruby_enterprise%27+username%3Amiketheman&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
 
 ### Reference cookbooks
 Repositories without the prefix `<char><char>-` are cookbooks that have been selected by
@@ -64,7 +66,7 @@ It is a memory prompt.  To contribute the first time see the next section.
         git rebase develop
         git push origin
         git flow feature start demo
-        # Pull other's (or your) changes:  http://hedgehogshiatus.com/106151091
+        # Pull other (or your) changes:  http://hedgehogshiatus.com/106151091
         git flow feature publish demo
         git flow feature finish demo
         # Once your pull request is merged
@@ -92,8 +94,9 @@ Git-flow extensions assist feature branch management, and help you quarantine an
  1. Clone your fork of `<ckbk>` to your desktop (shell)
 
         CKBK=users
+        USR=hedgehog
         pushd ~/src/
-        git clone git@github.com:hedgehog/${CKBK}.git
+        git clone git@github.com:${USR}/${CKBK}.git
         pushd ${CKBK}
         git fetch origin
  1. Add `cookbooks/<ckbk>` as the upstream.
@@ -160,7 +163,7 @@ Git-flow extensions assist feature branch management, and help you quarantine an
         git flow feature finish demo
         git fetch upstream
 
-If you look at `hedgehog/users` and `cookbooks/users`, you will see the results
+If you look at `${USR}/users` and `cookbooks/users`, you will see the results
 of the above, where I pulled in some changes from master that had been missed in some
 of the `qa` branch contributors - not their fault there was nothing like this page
 in existence at the time.
