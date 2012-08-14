@@ -54,6 +54,7 @@ These are corporate/organization owners, or upstream:
  - `su-*`: [Sensu](http://www.sonian.com/cloud-monitoring-sensu/)[*-chef](https://github.com/search?q=%27-chef%27+username%3Asensu&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
 
 These are the individual owners, or upstream:
+
  - `ap-*`: [atomic-penguin](http://atomic-penguin.github.com) (aka Eric G. Wolfe) [cookbook-*](https://github.com/search?q=%27cookbook-%27+username%3Aatomic-penguin&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
  - `ao-*`: apsoto (aka Alex Soto) [chef-*](https://github.com/search?q=%27chef-%27+username%3Aapsoto&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
  - `cr-*`: [coderanger](https://coderanger.net/) (aka Noah Kantrowitz) [chef-*](https://github.com/search?q=%27chef-%27+username%3Acoderanger&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
