@@ -48,7 +48,7 @@ These are corporate/organization owners, or upstream:
  - `ic-*`: [InfoChimps-Labs](http://www.infochimps.com/) [ironfan-pantry](https://github.com/infochimps-labs/ironfan-pantry) European-repository.
  - `mc-*`: modcloth-cookbooks [*](https://github.com/search?q=%27 %27+username%3Amodcloth-cookbooks&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
  - `nd-*`: [needle-cookbooks](http://www.needle.com/) [chef-*](https://github.com/search?q=%27chef-%27+username%3Aneedle-cookbooks&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
- - `oc-*`: [OpsCode](http://www.opscode.com/) [cookbooks](https://github.com/opscode/cookbooks) European-repository.
+ - `oc-*`: [OpsCode](http://www.opscode.com/) [*]((https://github.com/search?q=%27 %27+username%3Aopscode-cookbooks&repo=&langOverride=&start_value=1&type=Repositories&language=)) American-repository.
  - `rs-*`: [RightScale](http://www.rightscale.com/) [cookbooks](https://github.com/rightscale/cookbooks) and [cookbooks_public](https://github.com/rightscale/cookbooks_public) European-repositories.
  - `ss-*`: [SliverSky](http://silversky.ca/) (aka [fnichol](https://github.com/fnichol)) [chef-*](https://github.com/search?q=%27chef-%27+username%3Afnichol&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
  - `su-*`: [Sensu](http://www.sonian.com/cloud-monitoring-sensu/)[*-chef](https://github.com/search?q=%27-chef%27+username%3Asensu&repo=&langOverride=&start_value=1&type=Repositories&language=) American-repositories.
